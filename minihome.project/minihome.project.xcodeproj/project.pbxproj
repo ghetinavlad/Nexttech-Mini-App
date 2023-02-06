@@ -11,6 +11,10 @@
 		92CC3947299175AE00F4A08E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CC3946299175AE00F4A08E /* ContentView.swift */; };
 		92CC3949299175B300F4A08E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92CC3948299175B300F4A08E /* Assets.xcassets */; };
 		92CC394C299175B300F4A08E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92CC394B299175B300F4A08E /* Preview Assets.xcassets */; };
+		92CC395629917DCC00F4A08E /* DailyGratitudeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CC395529917DCC00F4A08E /* DailyGratitudeListView.swift */; };
+		92CC39592991876000F4A08E /* JournalTypeEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CC39582991876000F4A08E /* JournalTypeEntry.swift */; };
+		92CC395B2991899E00F4A08E /* DailyGratitudeListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CC395A2991899E00F4A08E /* DailyGratitudeListViewModel.swift */; };
+		92CC39602991908D00F4A08E /* Date Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CC395F2991908D00F4A08E /* Date Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		92CC3946299175AE00F4A08E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		92CC3948299175B300F4A08E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		92CC394B299175B300F4A08E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		92CC395529917DCC00F4A08E /* DailyGratitudeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyGratitudeListView.swift; sourceTree = "<group>"; };
+		92CC39582991876000F4A08E /* JournalTypeEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalTypeEntry.swift; sourceTree = "<group>"; };
+		92CC395A2991899E00F4A08E /* DailyGratitudeListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyGratitudeListViewModel.swift; sourceTree = "<group>"; };
+		92CC395F2991908D00F4A08E /* Date Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +59,10 @@
 		92CC3943299175AE00F4A08E /* minihome.project */ = {
 			isa = PBXGroup;
 			children = (
+				92CC395E2991908200F4A08E /* Extensions */,
+				92CC39522991776F00F4A08E /* DailyGratitude */,
 				92CC3944299175AE00F4A08E /* minihome_projectApp.swift */,
+				92CC39572991873300F4A08E /* Models */,
 				92CC3946299175AE00F4A08E /* ContentView.swift */,
 				92CC3948299175B300F4A08E /* Assets.xcassets */,
 				92CC394A299175B300F4A08E /* Preview Content */,
@@ -65,6 +76,47 @@
 				92CC394B299175B300F4A08E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		92CC39522991776F00F4A08E /* DailyGratitude */ = {
+			isa = PBXGroup;
+			children = (
+				92CC39542991779700F4A08E /* DailyGratitudeDetails */,
+				92CC39532991778400F4A08E /* DailyGratitudeList */,
+			);
+			path = DailyGratitude;
+			sourceTree = "<group>";
+		};
+		92CC39532991778400F4A08E /* DailyGratitudeList */ = {
+			isa = PBXGroup;
+			children = (
+				92CC395529917DCC00F4A08E /* DailyGratitudeListView.swift */,
+				92CC395A2991899E00F4A08E /* DailyGratitudeListViewModel.swift */,
+			);
+			path = DailyGratitudeList;
+			sourceTree = "<group>";
+		};
+		92CC39542991779700F4A08E /* DailyGratitudeDetails */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DailyGratitudeDetails;
+			sourceTree = "<group>";
+		};
+		92CC39572991873300F4A08E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				92CC39582991876000F4A08E /* JournalTypeEntry.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		92CC395E2991908200F4A08E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				92CC395F2991908D00F4A08E /* Date Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +189,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92CC39602991908D00F4A08E /* Date Extensions.swift in Sources */,
+				92CC39592991876000F4A08E /* JournalTypeEntry.swift in Sources */,
+				92CC395B2991899E00F4A08E /* DailyGratitudeListViewModel.swift in Sources */,
 				92CC3947299175AE00F4A08E /* ContentView.swift in Sources */,
+				92CC395629917DCC00F4A08E /* DailyGratitudeListView.swift in Sources */,
 				92CC3945299175AE00F4A08E /* minihome_projectApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -195,7 +251,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -249,7 +305,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
