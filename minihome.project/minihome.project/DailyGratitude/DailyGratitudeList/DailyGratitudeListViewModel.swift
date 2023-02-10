@@ -30,9 +30,7 @@ class DailyGratitudeListViewModel: ObservableObject {
     
     private func getDailyGratitudeList() {
         self.isLoading = true
-        
         self.getDailyGratitudeListPublisher.sink { [weak self] completion in
-            print("here")
             guard let self = self else { return }
             self.isLoading = false
             switch completion {
@@ -45,9 +43,7 @@ class DailyGratitudeListViewModel: ObservableObject {
         } receiveValue: { [weak self] response in
             guard let self = self else { return }
             self.isLoading = false
-            self.dailyGratitudeList = response
-            
-            
+            self.dailyGratitudeList = response.sorted { $0.date < $1.date}
         }.store(in: &subscribtions)
     }
 }
