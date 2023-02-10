@@ -21,7 +21,7 @@ struct DailyGratitudeDetailsView: View {
             Text(viewModel.item.summary)
                 .foregroundColor(.black)
                 .font(.headline.bold())
-                .f
+                .fixedSize(horizontal: false, vertical: true)
             
             if let profilePhotoData = viewModel.item.profilePhoto, let profilePhotoImage = profilePhotoData.image {
                 Image(uiImage: profilePhotoImage)
