@@ -8,12 +8,12 @@
 import Foundation
 import UIKit
 
-struct JournalTypeEntry: Identifiable {
+struct JournalTypeEntry: Identifiable, Decodable {
     let date: Date
     let summary: String
-    let profilePhoto: UIImage?
+    let profilePhoto: Data?
     let tags: [String]
-    let photos: [UIImage]?
+    let photos: [Data]?
     
-    let id: UUID = UUID()
+    var id: UUID = UUID()
 }

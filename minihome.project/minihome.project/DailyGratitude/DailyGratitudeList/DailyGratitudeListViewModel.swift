@@ -7,45 +7,47 @@
 
 import Foundation
 import Combine
+import UIKit
 
 class DailyGratitudeListViewModel: ObservableObject {
     
     @Published var dailyGratitudeList: [JournalTypeEntry] = []
+    @Published var isLoading = false
+    @Published var showDetails = false
+    @Published var selectedItem: JournalTypeEntry? = nil
     
-    init() {
-        self.dailyGratitudeList = mockedItems()
+    private let repository: DailyGratitudeListRepository
+    private var subscribtions = Set<AnyCancellable>()
+    
+    var getDailyGratitudeListPublisher: AnyPublisher<[JournalTypeEntry], Error> {
+        repository.getDailyGratitudeList()
     }
     
-    private func mockedItems() -> [JournalTypeEntry] {
-        var items: [JournalTypeEntry] = []
-        items = [JournalTypeEntry(
-            date: Date(),
-            summary: "Item 1",
-            profilePhoto: nil,
-            tags: ["gym", "karting", "formula1"],
-            photos: nil),
-                 JournalTypeEntry(
-                    date: Date(),
-                    summary: "Item 2",
-                    profilePhoto: nil,
-                    tags: ["gym", "karting", "formula1"],
-                    photos: nil
-                 ),
-                 JournalTypeEntry(
-                    date: Date(),
-                    summary: "Item 3",
-                    profilePhoto: nil,
-                    tags: ["gym", "karting", "formula1"],
-                    photos: nil
-                 ),
-                 JournalTypeEntry(
-                    date: Date(),
-                    summary: "Item 4",
-                    profilePhoto: nil,
-                    tags: ["gym", "karting", "formula1"],
-                    photos: nil
-                 )
-        ]
-        return items
+    init(repository: DailyGratitudeListRepository = DailyGratitudeListRepositoryImpl()) {
+        self.repository = repository
+        self.getDailyGratitudeList()
+    }
+    
+    private func getDailyGratitudeList() {
+        self.isLoading = true
+        
+        self.getDailyGratitudeListPublisher.sink { [weak self] completion in
+            print("here")
+            guard let self = self else { return }
+            self.isLoading = false
+            switch completion {
+            case .failure(let error):
+                self.isLoading = false
+                //handle error
+            case .finished:
+                return
+            }
+        } receiveValue: { [weak self] response in
+            guard let self = self else { return }
+            self.isLoading = false
+            self.dailyGratitudeList = response
+            
+            
+        }.store(in: &subscribtions)
     }
 }

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9201920629929DE900B8DD78 /* DailyGratitudeDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9201920529929DE900B8DD78 /* DailyGratitudeDetailsView.swift */; };
+		9201920829929FF400B8DD78 /* DailyGratitudeDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9201920729929FF400B8DD78 /* DailyGratitudeDetailsViewModel.swift */; };
 		92CC3945299175AE00F4A08E /* minihome_projectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CC3944299175AE00F4A08E /* minihome_projectApp.swift */; };
 		92CC3947299175AE00F4A08E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CC3946299175AE00F4A08E /* ContentView.swift */; };
 		92CC3949299175B300F4A08E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92CC3948299175B300F4A08E /* Assets.xcassets */; };
@@ -15,9 +17,14 @@
 		92CC39592991876000F4A08E /* JournalTypeEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CC39582991876000F4A08E /* JournalTypeEntry.swift */; };
 		92CC395B2991899E00F4A08E /* DailyGratitudeListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CC395A2991899E00F4A08E /* DailyGratitudeListViewModel.swift */; };
 		92CC39602991908D00F4A08E /* Date Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CC395F2991908D00F4A08E /* Date Extensions.swift */; };
+		92D7D5C629956C6900830C87 /* DailyGratitudeListRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D7D5C529956C6900830C87 /* DailyGratitudeListRepository.swift */; };
+		92D7D5C829956E8500830C87 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D7D5C729956E8500830C87 /* Networking.swift */; };
+		92DA0E2F29963D66009DE206 /* Image Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DA0E2E29963D66009DE206 /* Image Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9201920529929DE900B8DD78 /* DailyGratitudeDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyGratitudeDetailsView.swift; sourceTree = "<group>"; };
+		9201920729929FF400B8DD78 /* DailyGratitudeDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyGratitudeDetailsViewModel.swift; sourceTree = "<group>"; };
 		92CC3941299175AE00F4A08E /* minihome.project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = minihome.project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92CC3944299175AE00F4A08E /* minihome_projectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = minihome_projectApp.swift; sourceTree = "<group>"; };
 		92CC3946299175AE00F4A08E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -27,6 +34,9 @@
 		92CC39582991876000F4A08E /* JournalTypeEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalTypeEntry.swift; sourceTree = "<group>"; };
 		92CC395A2991899E00F4A08E /* DailyGratitudeListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyGratitudeListViewModel.swift; sourceTree = "<group>"; };
 		92CC395F2991908D00F4A08E /* Date Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date Extensions.swift"; sourceTree = "<group>"; };
+		92D7D5C529956C6900830C87 /* DailyGratitudeListRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyGratitudeListRepository.swift; sourceTree = "<group>"; };
+		92D7D5C729956E8500830C87 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		92DA0E2E29963D66009DE206 /* Image Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +76,7 @@
 				92CC3946299175AE00F4A08E /* ContentView.swift */,
 				92CC3948299175B300F4A08E /* Assets.xcassets */,
 				92CC394A299175B300F4A08E /* Preview Content */,
+				92D7D5C729956E8500830C87 /* Networking.swift */,
 			);
 			path = minihome.project;
 			sourceTree = "<group>";
@@ -92,6 +103,7 @@
 			children = (
 				92CC395529917DCC00F4A08E /* DailyGratitudeListView.swift */,
 				92CC395A2991899E00F4A08E /* DailyGratitudeListViewModel.swift */,
+				92D7D5C529956C6900830C87 /* DailyGratitudeListRepository.swift */,
 			);
 			path = DailyGratitudeList;
 			sourceTree = "<group>";
@@ -99,6 +111,8 @@
 		92CC39542991779700F4A08E /* DailyGratitudeDetails */ = {
 			isa = PBXGroup;
 			children = (
+				9201920529929DE900B8DD78 /* DailyGratitudeDetailsView.swift */,
+				9201920729929FF400B8DD78 /* DailyGratitudeDetailsViewModel.swift */,
 			);
 			path = DailyGratitudeDetails;
 			sourceTree = "<group>";
@@ -115,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				92CC395F2991908D00F4A08E /* Date Extensions.swift */,
+				92DA0E2E29963D66009DE206 /* Image Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -190,10 +205,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				92CC39602991908D00F4A08E /* Date Extensions.swift in Sources */,
+				92D7D5C829956E8500830C87 /* Networking.swift in Sources */,
 				92CC39592991876000F4A08E /* JournalTypeEntry.swift in Sources */,
 				92CC395B2991899E00F4A08E /* DailyGratitudeListViewModel.swift in Sources */,
 				92CC3947299175AE00F4A08E /* ContentView.swift in Sources */,
 				92CC395629917DCC00F4A08E /* DailyGratitudeListView.swift in Sources */,
+				9201920829929FF400B8DD78 /* DailyGratitudeDetailsViewModel.swift in Sources */,
+				9201920629929DE900B8DD78 /* DailyGratitudeDetailsView.swift in Sources */,
+				92D7D5C629956C6900830C87 /* DailyGratitudeListRepository.swift in Sources */,
+				92DA0E2F29963D66009DE206 /* Image Extensions.swift in Sources */,
 				92CC3945299175AE00F4A08E /* minihome_projectApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -320,10 +340,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"minihome.project/Preview Content\"";
-				DEVELOPMENT_TEAM = KH48CM9K9R;
+				DEVELOPMENT_TEAM = C3CSFK3TKY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -338,6 +359,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "VladGhetina.minihome-project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -349,10 +371,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"minihome.project/Preview Content\"";
-				DEVELOPMENT_TEAM = KH48CM9K9R;
+				DEVELOPMENT_TEAM = C3CSFK3TKY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -367,6 +390,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "VladGhetina.minihome-project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
