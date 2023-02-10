@@ -8,7 +8,7 @@
 import Foundation
 import Combine
 
-protocol DailyGratitudeListRepository: APIClient {
+protocol DailyGratitudeListRepository: DataSource {
     func getDailyGratitudeList() -> AnyPublisher<[JournalTypeEntry], Error>
 }
 
