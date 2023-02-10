@@ -77,6 +77,7 @@ struct DailyGratitudeListView: View {
             Text(entryItem.summary)
                 .foregroundColor(.black)
                 .font(.subheadline.bold())
+                .fixedSize(horizontal: false, vertical: true)
             
             if let photoData = entryItem.profilePhoto, let photoImage = photoData.image {
                 Image(uiImage: photoImage)
