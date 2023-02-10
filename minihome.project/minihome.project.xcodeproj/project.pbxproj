@@ -19,7 +19,7 @@
 		92CC39602991908D00F4A08E /* Date Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CC395F2991908D00F4A08E /* Date Extensions.swift */; };
 		92D7D5C629956C6900830C87 /* DailyGratitudeListRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D7D5C529956C6900830C87 /* DailyGratitudeListRepository.swift */; };
 		92DA0E2F29963D66009DE206 /* Image Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DA0E2E29963D66009DE206 /* Image Extensions.swift */; };
-		92EC05F32996578B00AD2E51 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EC05F22996578B00AD2E51 /* DataSource.swift */; };
+		92EC05F7299660CA00AD2E51 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EC05F6299660CA00AD2E51 /* DataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,7 +36,7 @@
 		92CC395F2991908D00F4A08E /* Date Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date Extensions.swift"; sourceTree = "<group>"; };
 		92D7D5C529956C6900830C87 /* DailyGratitudeListRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyGratitudeListRepository.swift; sourceTree = "<group>"; };
 		92DA0E2E29963D66009DE206 /* Image Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image Extensions.swift"; sourceTree = "<group>"; };
-		92EC05F22996578B00AD2E51 /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DataSource.swift; path = "../../../../../.Trash/Nexttech-Mini-App 12.31.27 PM/minihome.project/minihome.project/Extensions/DataSource.swift"; sourceTree = "<group>"; };
+		92EC05F6299660CA00AD2E51 /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DataSource.swift; path = ../../../../../DataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,7 +137,7 @@
 		92EC05F12996577D00AD2E51 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				92EC05F22996578B00AD2E51 /* DataSource.swift */,
+				92EC05F6299660CA00AD2E51 /* DataSource.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -217,11 +217,11 @@
 				92CC395B2991899E00F4A08E /* DailyGratitudeListViewModel.swift in Sources */,
 				92CC3947299175AE00F4A08E /* ContentView.swift in Sources */,
 				92CC395629917DCC00F4A08E /* DailyGratitudeListView.swift in Sources */,
-				92EC05F32996578B00AD2E51 /* DataSource.swift in Sources */,
 				9201920829929FF400B8DD78 /* DailyGratitudeDetailsViewModel.swift in Sources */,
 				9201920629929DE900B8DD78 /* DailyGratitudeDetailsView.swift in Sources */,
 				92D7D5C629956C6900830C87 /* DailyGratitudeListRepository.swift in Sources */,
 				92DA0E2F29963D66009DE206 /* Image Extensions.swift in Sources */,
+				92EC05F7299660CA00AD2E51 /* DataSource.swift in Sources */,
 				92CC3945299175AE00F4A08E /* minihome_projectApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
